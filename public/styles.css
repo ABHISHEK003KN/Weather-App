@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Carlito&family=Lobster&family=Poltawski+Nowy:wght@400;700&family=Roboto+Slab:wght@200&family=Shrikhand&family=Titillium+Web:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Slab', serif;
+    
+}
+.div1{
+    height: 745px;
+    width: 70%;
+    background-color:white;
+    background-image: url("https://www.google.com/imgres?imgurl=https%3A%2F%2Fscx2.b-cdn.net%2Fgfx%2Fnews%2F2019%2Fobservingclo.jpg&tbnid=McYHdg1n3Cfm8M&vet=10CBkQMyh0ahcKEwiIyOaPksX-AhUAAAAAHQAAAAAQAw..i&imgrefurl=https%3A%2F%2Fphys.org%2Fnews%2F2019-01-clouds-dimensions.html&docid=YkCTNqa0cI4mTM&w=927&h=618&q=cloud%20images&ved=0CBkQMyh0ahcKEwiIyOaPksX-AhUAAAAAHQAAAAAQAw");
+}
+.div1 li{
+  border: 1px solid black;
+  border-radius: 5px;
+  width:200px;
+  height: 100px;
+  padding-top: 10px;
+  transition : width 2s ,height 2s;
+}
+.div1 li h3{
+  font-size: x-large;
+}
+.div1 li:hover{
+  width: 225px ;
+  height: 125px;
+  opacity: 100px;
+  box-shadow: 10px 5px 5px gainsboro;
+}
+span{
+  padding-right: 5px;
+}
+.div2{
+    height: 745px;
+    width: 30%;
+    background-color:#7C96AB;
+    color: whitesmoke ;
+}
+.search{
+    margin-left:40%;
+    border-radius: 10px;
+    height: 40px;
+    width: 150px;
+}
+
+.right-cont{
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+button{
+    background-color: #F1F6F9;
+    width: 80px;
+}
+.data{
+    text-decoration: none;
+    margin-right:40px;
+    margin-top: 40px;
+    list-style-type:none ;
+}
+.container-flex{
+    display: flex;
+    justify-content: center;
+}
+.listitem{
+    justify-content: center;
+    margin: 10px;
+}
+
+.container-flex .listitem li{
+    text-decoration: none;
+    list-style-type:none ;
+    margin: 60px;
+
+}
+.container-flex .listitem li h5{
+    text-align: center;
+}
+.container-flex .listitem li h3{
+    text-align: center;
+}
+@media (max-width : 1200px){
+
+  .container-flex{
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+  .div1{
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+  }
+  .div2{
+    width: 100%;
+    height: 640px;
+    box-sizing: border-box;
+  }
+  .listitem{
+    margin: 1px;
+  }
+  .container-flex .listitem li{
+    margin: 20px;
+  }
+  .div1 li{
+    height: 100px;
+  }
+  .div1 li h3{
+    font-size: small;
+  }
+ 
+
+
+}

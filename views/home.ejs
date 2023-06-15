@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+   
+    <!-- Bootstrap CDN Link -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     
+      
+  <div class="container-flex">
+    <div class="div1" >
+        <h2 style="margin:20px;"><%= today %></h2>
+        <form action="/" method="post">
+          <input type="text" name="citydet" placeholder="  search.." class="search">
+          <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <h2 style="text-align: center; margin-top: 20px;">Current Weather Data of <%= city%></h2>
+    <ul style="display: flex;" class="listitem">
+          <li>
+            <h5><span class="material-symbols-outlined">
+              device_thermostat
+              </span>Temperature</h5>
+            <h3><%= temp %>&#8451</h3>
+         </li>
+          <li>
+            <h5><span class="material-symbols-outlined">
+              compare_arrows
+              </span>Pressure</h5>
+            <h3><%= pres %></h3>
+        </li>
+        <li>
+          <h5><span class="material-symbols-outlined">
+            humidity_high
+            </span>Humidity</h5>
+          <h3><%= hum %></h3>
+        </li>
+  </ul>
+        <ul style="display: flex;" class="listitem">
+          <li>
+            <h5><span class="material-symbols-outlined">
+              air
+              </span>Wind Speed</h5>
+            <h3><%= speed %></h3>
+          </li>
+          <li>
+            <h5><span class="material-symbols-outlined">
+              visibility
+              </span>Visibility</h5>
+            <h3><%= vis %></h3>
+          </li>
+          <li>
+            <h5><span class="material-symbols-outlined">
+              sunny
+              </span>TempMax</h5>
+            <h3><%= tempmax %>&#8451</h3>
+          </li>
+      </ul>
+    </div>
+      <div class="div2">
+
+           <div class="right-cont">
+            <h3><%= time%></h3>
+            <h2><%= city%><span class="material-symbols-outlined">
+              location_on
+              </span></h2>
+              <h2 style="margin-top: 20px;">Five day weather forecast</h2>
+              <ul class="forcast">
+                <li class="data">Today <h2><%= temp%>&#8451</h2></li>
+                <li class="data">Tommorow <h2><%= temp1%>&#8451</h2></li>
+                <li class="data">Day 3 <h2><%= temp2%>&#8451</h2></li>
+                <li class="data">Day 4 <h2><%= temp3%>&#8451</h2></li>
+                <li class="data">Day 5 <h2><%= temp4%>&#8451</h2></li>
+
+
+              </ul>
+        </div>
+  </div>
+
+
+</body>
+</html>
